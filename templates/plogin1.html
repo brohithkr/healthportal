@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Login </title>
+		<div class="title">
+            <h1>Patient Information Portal</h1>
+        </div>
+        <!-- <link rel="stylesheet" href="./index.css">		 -->
+		<link rel="stylesheet" href="static/styles/dlogin.css" media="screen">	
+		<link rel="stylesheet" href="static/styles/dashboard.css" media="screen">		
+	</head>
+	<body></br></br></br></br>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="title">
+				<h1 class="word">Patient Login</h1>
+			</div></br>
+			<h2 class="word">
+				
+				<form action="" method="post">
+					<input id="username" name="id" type="text" placeholder="ID" class="textbox" value="{{request.form.id}}"/></br></br>
+					<input id="password" name="password" type="password" placeholder="Password" class="textbox" value="{{request.form.password}}"/></br></br></br>
+					<input type="submit" class="btn" value="Sign In"></br></br>
+				</form>
+			</h2>
+            {% if error %}
+                <p class="error"><strong>Error: </strong>{{error}}</p>
+            {% endif %}
+		</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+.textbox{
+    border: .5px solid darkslategrey;
+    border-radius: 8px;
+    padding: 6px 20px;
+    font-size: 16px;
+}
+
+.btn{
+    border: .5px solid darkslategrey;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-size: 16px
+}
+
+.error{
+    color: red;
+}
+
+.right{
+    float: right;
+}
