@@ -173,3 +173,6 @@ def plogged():
 def plogout():
     session["pid"]=None
     return redirect("/")
+  
+if __name__=="__main__":
+    app.run()
